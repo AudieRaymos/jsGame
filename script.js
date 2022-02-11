@@ -22,6 +22,16 @@ function hardMode() {
 
 function compareGuess() {
     const userGuess = Number(document.getElementById('inputBox').value);
-    userGuesses.push(userGuess);
+    userGuesses.push(" " + userGuess);
     document.getElementById("guesses").innerHTML = userGuesses;
+
+    if(userGuess > compareGuess) {
+        document.getElementById('textOutput').innerHTML = "Your guess is too high!";
+        document.getElementById('inputBox').value = "";
+    } else if(userGuess < compareGuess) {
+        document.getElementById('textOutput').innerHTML = "Your guess is too low!";
+        document.getElementById('inputBox').value = "";
+    } else {
+        document.getElementById('textOutput').innerHTML = "You are correct!";
+    }
 }
