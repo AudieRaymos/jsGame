@@ -33,3 +33,11 @@ p {
     display: flex;
     flex-direction: column;
 }
+
+button {
+    border: none;
+    cursor: pointer;
+    background: #83e1d0;
+    padding: 2rem;
+    border-radius: 1rem 1rem 0 0;
+}
