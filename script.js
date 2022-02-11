@@ -8,8 +8,8 @@ function init() {
 }
 
 function startGameView() {
-    document.getElementById('welcomeScreen').style.display = "none";
-    document.getElementById('gameArea').style.display = "block";
+    document.getElementById("welcomeScreen").style.display = "none";
+    document.getElementById("gameArea").style.display = "block";
 }
 
 function easyMode() {
@@ -21,5 +21,7 @@ function hardMode() {
 }
 
 function compareGuess() {
-    Number(document.getElementById('inputBox').value)
+    const userGuess = Number(document.getElementById('inputBox').value);
+    userGuesses.push(userGuess);
+    document.getElementById("guesses").innerHTML = userGuesses;
 }
