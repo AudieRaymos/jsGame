@@ -1,4 +1,5 @@
 let computerGuess
+let userGuesses = [];
 
 function init() {
     computerGuess = Math.floor(Math.random() * 100 + 1);
@@ -17,4 +18,8 @@ function easyMode() {
 
 function hardMode() {
     startGameView();
+}
+
+function compareGuess() {
+    Number(document.getElementById('inputBox').value)
 }
