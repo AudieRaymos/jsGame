@@ -1,0 +1,10 @@
+html{
+    font-size: 10px;
+    font-weight: 300;
+}
+
+body{
+    width: 90vw;
+    margin: 0 auto;
+    background: radial-gradient(#343e63, #2a3352);
+}
