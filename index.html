@@ -22,8 +22,20 @@
 
         <div id="gameArea">
             <button id="newGameButton">NEW GAME</button>
-            <h3 id="textOutput">Your Guess</h3>
-            <input type="number" id="inputBox" min="1" max="100">
+                <section>
+                    <h3 id="textOutput">Your Guess</h3>
+                    <input type="number" id="inputBox" min="1" max="100">
+                </section>
+
+                <section>
+                    <p>Current range:</p>
+                    <span id="rangeOutput">1-100</span>
+                        <div id="range">
+                            <span id="low"></span>
+                            <span id="space"></span>
+                            <span id="high"></span>
+                        </div>
+                </section>
         </div>
     </main>
 </body>
