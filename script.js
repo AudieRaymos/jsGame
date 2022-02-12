@@ -31,13 +31,24 @@ function compareGuess() {
     attempts++
     document.getElementById("attempts").innerHTML = attempts;
 
-    if(userGuess > computerGuess) {
-        document.getElementById("textOutput").innerHTML = "Your guess is too high!";
-        document.getElementById("inputBox").value = "";
-    } else if(userGuess < computerGuess) {
-        document.getElementById("textOutput").innerHTML = "Your guess is too low!";
-        document.getElementById("inputBox").value = "";
+    if(attempts < maxGuesses) {
+        if(userGuess > computerGuess) {
+            document.getElementById("textOutput").innerHTML = "Your guess is too high!";
+            document.getElementById("inputBox").value = "";
+        } else if(userGuess < computerGuess) {
+            document.getElementById("textOutput").innerHTML = "Your guess is too low!";
+            document.getElementById("inputBox").value = "";
+        } else {
+            document.getElementById("textOutput").innerHTML = "You are correct! You got it in " + attempts + " attempts";
+        }
     } else {
-        document.getElementById("textOutput").innerHTML = "You are correct! You got it in " + attempts + " attempts";
+        if(userGuess > computerGuess) {
+            document.getElementById("textOutput").innerHTML = "YOU LOSE! <br> The number was " + computerGuess;
+        } else if(userGuess < computerGuess) {
+            document.getElementById("textOutput").innerHTML = "YOU LOSE! <br> The number was " + computerGuess;
+            document.getElementById("inputBox").value = "";
+        } else {
+            document.getElementById("textOutput").innerHTML = "You are correct! You got it in " + attempts + " attempts";
+        }
     }
 }
