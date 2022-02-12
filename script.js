@@ -36,6 +36,6 @@ function compareGuess() {
         document.getElementById("textOutput").innerHTML = "Your guess is too low!";
         document.getElementById("inputBox").value = "";
     } else {
-        document.getElementById("textOutput").innerHTML = "You are correct!";
+        document.getElementById("textOutput").innerHTML = "You are correct! You got it in " + attempts + " attempts";
     }
 }
