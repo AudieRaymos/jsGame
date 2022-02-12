@@ -27,15 +27,15 @@ function compareGuess() {
     userGuesses.push(" " + userGuess);
     document.getElementById("guesses").innerHTML = userGuesses;
     attempts++
-    document.getElementById('attempts').innerHTML = attempts;
+    document.getElementById("attempts").innerHTML = attempts;
 
     if(userGuess > computerGuess) {
-        document.getElementById('textOutput').innerHTML = "Your guess is too high!";
-        document.getElementById('inputBox').value = "";
+        document.getElementById("textOutput").innerHTML = "Your guess is too high!";
+        document.getElementById("inputBox").value = "";
     } else if(userGuess < computerGuess) {
-        document.getElementById('textOutput').innerHTML = "Your guess is too low!";
-        document.getElementById('inputBox').value = "";
+        document.getElementById("textOutput").innerHTML = "Your guess is too low!";
+        document.getElementById("inputBox").value = "";
     } else {
-        document.getElementById('textOutput').innerHTML = "You are correct!";
+        document.getElementById("textOutput").innerHTML = "You are correct!";
     }
 }
