@@ -15,10 +15,12 @@ function startGameView() {
 }
 
 function easyMode() {
+    maxGuesses = 10;
     startGameView();
 }
 
 function hardMode() {
+    maxGuesses = 5;
     startGameView();
 }
 
